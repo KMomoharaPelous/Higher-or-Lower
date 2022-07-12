@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Let's Play The Higher-Lower Game!</h1>
+    <h3>Guess The Magic Number Between 1 and 100.</h3>
+    <h6>
+      <!-- This element will be updated from javascript with the remaining number of guesses. -->
+      <span id="remaining-guesses">5</span> 
+      Guesses Remaining.
+    </h6>
+
+    <!-- This element's value will be checked from javascript when a new guess is made. -->
+
+    <!--I was not sure why the input box blended in with the background -->
+
+      <div>
+        <input id="guess-input" class="form-control align-self-center" type="number"></input>
+        <!-- TODO:: Add a guess button that calls handleGuess function when clicked -->
+        <button type="button" class="btn btn-primary col-sm-4 align-self-center" onclick="handleGuess()">Make Your Guess!</button>
+      </div>
+
+    <!-- This element contains each of the possible messages to the user. We will selectively remove the "hidden" class from one element at a time using javascript. -->
+      <div id="message-container" class="container-fluid">
+        <div id="higher-message" class="hidden">Higher ⬆️</div>
+        <div id="lower-message" class="hidden">Lower ⬇️</div>
+        <div id="win-message" class="hidden">
+          You Win!
+          <!-- TODO:: Add a play again button here. -->
+          <button type="button" class="btn btn-danger" id="play-again" onclick="setupNewGame()">Play Again!</button>
+        </div>
+        <div id="lose-message" class="hidden">
+          You Lose :(
+          <!-- TODO:: Add a play again button here. -->
+          <button type="button" id="play-again" class="btn btn-danger" onclick="setupNewGame()">Play Again!</button>
+        </div>
+      </div>
+    <script src="provided.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

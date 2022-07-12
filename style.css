@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  background-color: #292525;
+    background-image: url(https://cdn.wallpapersafari.com/0/14/7ItidJ.jpg);
+  background-repeat: repeat-x;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-family: 'Teko', sans-serif;
+  font-size: 70px;
+  color: #00b4cc;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  color: #00b4cc;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  padding: 10px;
+}
+
+html {
+  padding-top: 100px;
+}
+
+input {
+  text-align: center;
+}
