@@ -1,11 +1,10 @@
 * {
-  box-sizing: border-box;
   background-color: #292525;
-  background-repeat: repeat-x;
 }
 
 .hidden {
   display: none;
+  color: #00b4cc;
 }
 
 h1 {
