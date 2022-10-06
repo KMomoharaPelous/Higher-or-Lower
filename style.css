@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   background-color: #292525;
-    background-image: url(https://cdn.wallpapersafari.com/0/14/7ItidJ.jpg);
   background-repeat: repeat-x;
 }
 
@@ -30,4 +29,11 @@ html {
 
 input {
   text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  justify-content: center;
+  align-items: center;
 }
